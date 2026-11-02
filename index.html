@@ -1,0 +1,225 @@
+echo "# student-portfolio" >> README.md
+git init
+git add README.md
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Student Portfolio</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #080808;
+  color: white;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+nav {
+  background: #111;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+}
+
+nav a:hover {
+  color: #a855f7;
+}
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  background: radial-gradient(circle, #291044, #080808 65%);
+}
+
+.hero h1 {
+  font-size: clamp(35px, 8vw, 65px);
+  color: #c084fc;
+}
+
+.hero p {
+  color: #ccc;
+  margin: 12px;
+}
+
+.btn {
+  display: inline-block;
+  background: #9333ea;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 75px 25px;
+}
+
+h2 {
+  color: #c084fc;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.card {
+  background: #171717;
+  border: 1px solid #333;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 18px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills span {
+  background: #32134d;
+  border: 1px solid #9333ea;
+  padding: 10px 18px;
+  border-radius: 20px;
+}
+
+footer {
+  text-align: center;
+  background: #111;
+  padding: 30px;
+  color: #aaa;
+}
+
+a {
+  color: #c084fc;
+}
+
+@media(max-width: 600px) {
+  nav a {
+    display: inline-block;
+    margin: 5px;
+    font-size: 13px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#home">หน้าแรก</a>
+  <a href="#about">เกี่ยวกับฉัน</a>
+  <a href="#education">การศึกษา</a>
+  <a href="#skills">ทักษะ</a>
+  <a href="#works">ผลงาน</a>
+  <a href="#contact">ติดต่อ</a>
+</nav>
+
+<header class="hero" id="home">
+  <p>WELCOME TO MY PORTFOLIO</p>
+  <h1>YOUR NAME</h1>
+  <p>นักเรียน | Student Portfolio</p>
+  <p>ยินดีต้อนรับเข้าสู่เว็บไซต์สะสมผลงานของฉัน</p>
+  <a class="btn" href="#about">รู้จักฉันเพิ่มเติม</a>
+</header>
+
+<section id="about">
+  <h2>About Me | เกี่ยวกับฉัน</h2>
+  <div class="card">
+    <h3>ประวัติส่วนตัว</h3>
+    <p>ชื่อ-นามสกุล: YOUR NAME</p>
+    <p>ชื่อเล่น: YOUR NICKNAME</p>
+    <p>วันเกิด: DD/MM/YYYY</p>
+    <p>โรงเรียน: YOUR SCHOOL</p>
+    <p>คติประจำใจ: ความพยายามอยู่ที่ไหน ความสำเร็จอยู่ที่นั่น</p>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education | ประวัติการศึกษา</h2>
+  <div class="card">
+    <h3>ระดับประถมศึกษา</h3>
+    <p>ชื่อโรงเรียนของคุณ</p>
+  </div>
+  <div class="card">
+    <h3>ระดับมัธยมศึกษา</h3>
+    <p>ชื่อโรงเรียนของคุณ</p>
+    <p>แผนการเรียน: ระบุแผนการเรียน</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>My Skills | ความสามารถ</h2>
+  <div class="skills">
+    <span>การทำงานเป็นทีม</span>
+    <span>การสื่อสาร</span>
+    <span>การใช้คอมพิวเตอร์</span>
+    <span>ความคิดสร้างสรรค์</span>
+    <span>ภาษาอังกฤษ</span>
+    <span>การแก้ปัญหา</span>
+  </div>
+</section>
+
+<section id="works">
+  <h2>My Works | ผลงานของฉัน</h2>
+  <div class="card">
+    <h3>ผลงานที่ 1</h3>
+    <p>รายละเอียดผลงานและสิ่งที่ได้รับจากการทำกิจกรรม</p>
+  </div>
+  <div class="card">
+    <h3>ผลงานที่ 2</h3>
+    <p>รายละเอียดโครงงานหรือกิจกรรมที่เคยเข้าร่วม</p>
+  </div>
+</section>
+
+<section id="certificates">
+  <h2>Certificates | เกียรติบัตร</h2>
+  <div class="card">
+    <h3>เกียรติบัตรที่ 1</h3>
+    <p>ชื่อกิจกรรมหรือการแข่งขัน</p>
+  </div>
+  <div class="card">
+    <h3>เกียรติบัตรที่ 2</h3>
+    <p>ชื่อกิจกรรมหรือการแข่งขัน</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact | ติดต่อฉัน</h2>
+  <div class="card">
+    <p>Email: your@email.com</p>
+    <p>Facebook: ชื่อลิงก์ของคุณ</p>
+    <p>Instagram: ชื่อบัญชีของคุณ</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 My Student Portfolio</p>
+  <p>Designed with ❤️ by YOUR NAME</p>
+</footer>
+
+</body>
+</html>
